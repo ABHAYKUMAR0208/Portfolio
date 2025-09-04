@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+
+<!-- Contact Section -->
+<section class="contact-section py-5 bg-dark text-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h6 class="text-success">GET IN TOUCH</h6>
+      <h2 class="fw-bold">Let's discuss<br>about an project!</h2>
+    </div>
+
+    <div class="row g-4">
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <form action="#" method="POST">
+          <div class="row mb-3">
+            <div class="col">
+              <label class="form-label text-white">Your Name</label>
+              <input type="text" class="form-control bg-transparent border-bottom text-white" required>
+            </div>
+            <div class="col">
+              <label class="form-label text-white">Your Email</label>
+              <input type="email" class="form-control bg-transparent border-bottom text-white" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <label class="form-label text-white">Phone Number</label>
+              <input type="text" class="form-control bg-transparent border-bottom text-white">
+            </div>
+            <div class="col">
+              <label class="form-label text-white">Your Website</label>
+              <input type="url" class="form-control bg-transparent border-bottom text-white">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label text-white">Message</label>
+            <textarea class="form-control bg-transparent border-bottom text-white" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Submit now</button>
+        </form>
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.982255776449!2d78.03219127469243!3d30.31649447477134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092983e3ad2705%3A0x402a3b5b9f9c66f!2sGraphic%20Era%20Hill%20University!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="350" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter-section py-5 bg-black text-white">
+  <div class="container text-center">
+    <h5 class="fw-bold mb-3">SUBSCRIBE MY NEWSLETTER</h5>
+    <div class="d-flex justify-content-center">
+      <input type="email" class="form-control me-2" style="max-width: 400px; width: 100%; height: 48px;" placeholder="Enter Your Email">
+      <button class="btn btn-outline-success px-4">Notify Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer-section bg-dark text-white py-5">
+  <div class="container">
+    <div class="row text-center mb-4">
+      <div class="col-md-4 mb-3">
+        <div class="d-flex flex-column align-items-center">
+          <div class="bg-success p-3 rounded-circle mb-2">
+            <i class="fas fa-map-marker-alt fa-lg text-dark"></i>
+          </div>
+          <h6 class="fw-bold">Address</h6>
+          <p>IT Park, Sahastradhara Road<br>Dehradun 248001</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="d-flex flex-column align-items-center">
+          <div class="bg-success p-3 rounded-circle mb-2">
+            <i class="fas fa-phone fa-lg text-dark"></i>
+          </div>
+          <h6 class="fw-bold">Lets talk us</h6>
+          <p>+91 7895327706</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="d-flex flex-column align-items-center">
+          <div class="bg-success p-3 rounded-circle mb-2">
+            <i class="fas fa-envelope fa-lg text-dark"></i>
+          </div>
+          <h6 class="fw-bold">Send us email</h6>
+          <p>02abhaykumarr@gmail.com<br>abhaykumar02@flash.co</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <small>&copy; Copyright 2025 | All Rights Reserved</small>
+      <div class="d-flex justify-content-center gap-3 mt-2">
+        <a href="#" class="text-white text-decoration-none">Terms & Conditions</a>
+        <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% endblock %}

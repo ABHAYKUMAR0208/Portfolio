@@ -1,0 +1,132 @@
+/* === Global Styles === */
+body {
+  background: #0d0d1f;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 70px;
+  line-height: 1.6;
+}
+
+h2, h5 {
+  color: #fff;
+  font-weight: 600;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+/* === Navbar === */
+.navbar {
+  box-shadow: 0 0 10px #00ffff44;
+}
+
+/* === Section Titles === */
+.section-title {
+  color: #00ffff;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+/* === Card Styles === */
+.card {
+  background-color: #1a1a2e;
+  color: #fff;
+  border: 1px solid #2c2c54;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  border-color: #00ffff;
+}
+
+/* === Skills Grid === */
+.skill-icons i {
+  font-size: 2.5rem;
+  margin: 0.75rem;
+  color: #00bcd4;
+}
+
+/* Dual-color Python Icon */
+.dual-color {
+  background: linear-gradient(to right, #FFD845 50%, #4B8BBE 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* === Buttons === */
+.btn-theme {
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+}
+
+.btn-theme:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+/* === Contact Form === */
+form input, form textarea {
+  background-color: #1a1a2e;
+  border: 1px solid #2c2c54;
+  color: white;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #00ffff;
+  box-shadow: none;
+}
+
+/* === Footer === */
+footer {
+  background: #1a1a2e;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* === Utility === */
+.section {
+  padding: 4rem 0;
+}
+
+hr {
+  border-top: 1px solid #2c2c54;
+}
+
+.skill-box {
+  transition: transform 0.3s ease-in-out;
+}
+.skill-box:hover {
+  transform: scale(1.1);
+}
+
+.skill-fade-in {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

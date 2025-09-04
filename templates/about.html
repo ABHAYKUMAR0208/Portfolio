@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+{% block title %}About Me{% endblock %}
+{% block content %}
+
+<h2 class="section-title text-center">About Me</h2>
+
+<!-- Education Section -->
+<div class="row gy-4 mb-5">
+  <!-- Education Section -->
+  <div class="col-md-6">
+    <div class="card h-100 shadow-sm bg-dark text-white px-3 py-2">
+      <div class="card-body">
+        <h5 class="card-title mb-4">🎓 Education</h5>
+        <ul class="list-unstyled">
+
+          <!-- MCA - GEHU -->
+          <li class="d-flex align-items-start gap-3 mb-4">
+            <img src="{{ url_for('static', filename='images/gehu-logo.jpeg') }}" alt="GEHU Logo"
+                 width="45" height="45" class="rounded">
+            <div>
+              <strong>MCA</strong><br>
+              Graphic Era Hill University, Dehradun<br>
+              <small class="text-muted">Aug 2022 – Jul 2024</small>
+            </div>
+          </li>
+
+          <!-- BSc IT - HNBGU -->
+          <li class="d-flex align-items-start gap-3">
+            <img src="{{ url_for('static', filename='images/HNBG-logo.png') }}" alt="HNBGU Logo"
+                 width="45" height="45" class="rounded">
+            <div>
+              <strong>BSc IT</strong><br>
+              Uttaranchal College of Science and Technology (HNBGU)<br>
+              <small class="text-muted">Aug 2019 – Jul 2022</small>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience Section -->
+  <div class="col-md-6">
+    <div class="card h-100 shadow-sm bg-dark text-white px-3 py-2">
+      <div class="card-body">
+        <h5 class="card-title mb-4">💼 Experience</h5>
+        <ul class="ps-3">
+          <li class="mb-3">
+            <strong>Freelance Web Developer</strong> <span class="text-muted">(Nov 2024 – Feb 2025)</span>
+            <ul>
+              <li>Built responsive landing pages & full-stack MERN websites.</li>
+              <li>Integrated authentication and optimized performance.</li>
+            </ul>
+          </li>
+
+          <li class="mb-3">
+            <strong>Web Dev Intern - Motion Cut</strong> <span class="text-muted">(Mar 2024 – May 2024)</span>
+            <p class="mb-0">Worked remotely, aligned dev tasks with business objectives.</p>
+          </li>
+
+          <li>
+            <strong>Web Dev Intern - Techno Hack Edu Tech</strong> <span class="text-muted">(Aug 2023 – Oct 2023)</span>
+            <p class="mb-0">Represented brand and executed multiple web development tasks.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<h2 class="section-title text-center mb-4">Skills & Technologies</h2>
+
+
+<!-- Carousel Container for Mobile -->
+<div class="d-md-none">
+  <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+    <div class="carousel-inner text-center">
+
+     <!-- HTML5 -->
+<div class="carousel-item active">
+  <div class="skill-box skill-fade-in">
+    <i class="fab fa-html5 fa-3x text-warning"></i>
+    <p class="mt-2">HTML5</p>
+  </div>
+</div>
+
+<!-- CSS3 -->
+<div class="carousel-item">
+  <div class="skill-box skill-fade-in">
+    <i class="fab fa-css3-alt fa-3x text-primary"></i>
+    <p class="mt-2">CSS3</p>
+  </div>
+</div>
+
+<!-- ✅ Bootstrap (Moved here) -->
+<div class="carousel-item">
+  <div class="skill-box skill-fade-in">
+    <img src="{{ url_for('static', filename='images/bootstrap.png') }}"
+         alt="Bootstrap Logo"
+         width="50" height="50"
+         class="rounded"
+         style="background: transparent;">
+    <p class="mt-2">Bootstrap</p>
+  </div>
+</div>
+
+<!-- ✅ Tailwind (Moved here) -->
+<div class="carousel-item">
+  <div class="skill-box skill-fade-in">
+    <img src="{{ url_for('static', filename='images/tailwind.png') }}"
+         alt="Tailwind CSS Logo"
+         width="50" height="50"
+         class="rounded"
+         style="background: transparent;">
+    <p class="mt-2">Tailwind CSS</p>
+  </div>
+</div>
+
+      <div class="carousel-item">
+        <div class="skill-box skill-fade-in">
+          <img src="{{ url_for('static', filename='images/python-colored.png') }}"
+               alt="Python Logo"
+               width="50" height="50"
+               class="rounded"
+               style="background: transparent;">
+          <p class="mt-2">Python</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="skill-box skill-fade-in">
+          <i class="fab fa-js fa-3x text-warning"></i>
+          <p class="mt-2">JavaScript</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="skill-box skill-fade-in">
+          <i class="fab fa-react fa-3x text-info"></i>
+          <p class="mt-2">React</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="skill-box skill-fade-in">
+          <i class="fab fa-node-js fa-3x text-success"></i>
+          <p class="mt-2">Node.js</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="skill-box skill-fade-in">
+          <i class="fab fa-git-alt fa-3x text-danger"></i>
+          <p class="mt-2">Git</p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+<!-- Grid for Larger Screens -->
+<div class="row text-center g-4 justify-content-center d-none d-md-flex">
+{% set skills = [
+  ('fab fa-html5 text-warning', 'HTML5'),
+  ('fab fa-css3-alt text-primary', 'CSS3'),
+  ('img', 'bootstrap.png', 'Bootstrap'),     
+  ('img', 'tailwind.png', 'Tailwind CSS'),  
+  ('img', 'python-colored.png', 'Python'),
+  ('fab fa-js text-warning', 'JavaScript'),
+  ('fab fa-react text-info', 'React'),
+  ('fab fa-node-js text-success', 'Node.js'),
+  ('fab fa-git-alt text-danger', 'Git')
+] %}
+
+
+  {% for skill in skills %}
+    <div class="col-4 col-md-2 skill-box skill-fade-in">
+      {% if skill[0] == 'img' %}
+        <img src="{{ url_for('static', filename='images/' ~ skill[1]) }}"
+             alt="{{ skill[2] }} Logo"
+             width="50" height="50"
+             class="rounded"
+             style="background: transparent;">
+        <p class="mt-2">{{ skill[2] }}</p>
+      {% else %}
+        <i class="{{ skill[0] }} fa-3x"></i>
+        <p class="mt-2">{{ skill[1] }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

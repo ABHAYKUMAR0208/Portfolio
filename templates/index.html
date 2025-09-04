@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Home | Abhay Kumar{% endblock %}
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="hero-section d-flex align-items-center" style="min-height: 90vh; background-color: #0d0d1f; color: white;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Text -->
+      <div class="col-md-6 mb-5 mb-md-0">
+        <h1 class="fw-bold display-4">Hi, I'm <span class="text-info">Abhay!</span></h1>
+        <h2 class="fw-bold" style="color: #00ff99;">Web <span style="color: white;">Developer</span></h2>
+        <p class="text-light mt-3">
+          A passionate developer crafting modern web applications and responsive user interfaces.
+          I specialize in MERN stack, intuitive design, and seamless performance.
+        </p>
+
+        <!-- CV Button -->
+        <div class="mt-4 d-flex flex-wrap align-items-center gap-3">
+          <a href="{{ url_for('static', filename='Abhay-Kumar-CV.pdf') }}" class="btn btn-outline-info px-4 py-2">
+            <i class="fa fa-download me-2"></i>Download CV
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="mt-4 d-flex gap-4 social-icons">
+          <a href="https://github.com/abhaykumar0208" target="_blank" class="text-white fs-4">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/abhay-kumar-283a25224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text-white fs-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://instagram.com/https://www.instagram.com/02abhaykumar" target="_blank" class="text-white fs-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com/https://www.facebook.com/profile.php?id=100019323428388" target="_blank" class="text-white fs-4">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-md-6 text-center">
+        <div class="position-relative d-inline-block">
+          <div class="hover-scale">
+            <img src="{{ url_for('static', filename='images/Abhay.webp') }}"
+                 class="img-fluid"
+                 style="max-width: 300px;">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Optional: Hover Style -->
+<style>
+  .social-icons a:hover {
+    color: #00ff99 !important;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
+</style>
+
+{% endblock %}
